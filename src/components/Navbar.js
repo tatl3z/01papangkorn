@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // นำเข้า useNavigate
 
 function Navbar() {
+    const navigate = useNavigate(); // สร้างตัวนำทาง
+
     return (
         <nav className="navbar navbar-expand-lg custom-navbar">
             <div className="container-fluid">
@@ -14,7 +17,12 @@ function Navbar() {
                 </a>
 
                 {/* ข้อความหน้าแรกด้านขวา */}
-                <a className="navbar-brand text-white ms-auto" href="#">หน้าแรก</a>
+                <button
+                    className="navbar-brand text-white ms-auto"
+                    onClick={() => navigate("/")} // ใช้ navigate เพื่อนำไปยังหน้าแรก
+                >
+                    หน้าแรก
+                </button>
             </div>
 
             {/* Inline CSS */}
@@ -27,6 +35,10 @@ function Navbar() {
                 }
                 .navbar-brand {
                     color: white !important; /* ข้อความสีขาว */
+                    border: none; /* ลบเส้นขอบ */
+                    background: none; /* ลบพื้นหลัง */
+                    cursor: pointer; /* เปลี่ยนเมาส์เป็นรูปมือ */
+                    font-size: 16px; /* ขนาดตัวอักษร */
                 }
                 .ms-auto {
                     margin-left: auto; /* ดันข้อความไปด้านขวาสุด */
