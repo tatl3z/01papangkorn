@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tatl3z/01papangkorn.git/static/css/main.955f0b1b.css",
+    "main.js": "/tatl3z/01papangkorn.git/static/js/main.7b1ca4d0.js",
+    "static/js/453.ed3810f9.chunk.js": "/tatl3z/01papangkorn.git/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/tatl3z/01papangkorn.git/index.html",
+    "main.955f0b1b.css.map": "/tatl3z/01papangkorn.git/static/css/main.955f0b1b.css.map",
+    "main.7b1ca4d0.js.map": "/tatl3z/01papangkorn.git/static/js/main.7b1ca4d0.js.map",
+    "453.ed3810f9.chunk.js.map": "/tatl3z/01papangkorn.git/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.955f0b1b.css",
+    "static/js/main.7b1ca4d0.js"
+  ]
+}
