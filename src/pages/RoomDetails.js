@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./RoomDetails.css"; // ใช้ไฟล์ CSS แยกสำหรับจัดการสไตล์
 
 function RoomDetails() {
+    const navigate = useNavigate(); // ใช้ navigate สำหรับเปลี่ยนเส้นทาง
+
+    const handleBooking = () => {
+        navigate("/confirmation"); // เปลี่ยนไปยังหน้าถัดไป
+    };
+
     return (
         <div className="room-details-container">
             {/* Section ภาพและแบบฟอร์มการจอง */}
@@ -60,7 +67,13 @@ function RoomDetails() {
                             <input type="number" defaultValue={1} />
                         </div>
                         <div className="price">ราคาทั้งหมด: 1,000 บาท</div>
-                        <button type="button" className="booking-button">จองห้อง</button>
+                        <button
+                            type="button"
+                            className="booking-button"
+                            onClick={handleBooking}
+                        >
+                            จองห้อง
+                        </button>
                     </form>
                 </div>
             </div>
