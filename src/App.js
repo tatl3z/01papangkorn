@@ -7,6 +7,7 @@ import News from "./pages/News";
 import Reviews from "./pages/Reviews";
 import Footer from "./pages/Footer";
 import RoomDetails from "./pages/RoomDetails"; // แก้ไข import ให้สอดคล้องกับตำแหน่งไฟล์จริง
+import BookingConfirmation from "./pages/BookingConfirmation"; // เพิ่มหน้าสำหรับการยืนยันการจอง
 
 function App() {
     return (
@@ -29,6 +30,9 @@ function App() {
                     />
                     {/* เส้นทางสำหรับหน้ารายละเอียดห้องพัก */}
                     <Route path="/room-details/:type" element={<RoomDetails />} />
+                    
+                    {/* เส้นทางสำหรับหน้าการยืนยันการจอง */}
+                    <Route path="/confirmation" element={<BookingConfirmation />} />
                 </Routes>
             </div>
         </Router>
